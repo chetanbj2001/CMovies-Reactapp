@@ -1,0 +1,51 @@
+/* Base styles for desktop and larger screens */
+.header {
+    margin: 0 2.5rem;
+    padding: 0.5rem 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLeft,
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+a > span {
+    margin: 0 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: white;
+}
+
+a > span:hover {
+    color: red;
+}
+
+.header__icon {
+    width: 80px;
+    cursor: pointer;
+}
+
+.user__avatar {
+    font-size: 2rem;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .header {
+        margin: 0 1rem;
+        padding: 0.5rem 0;
+    }
+
+    a > span {
+        font-size: 1rem;
+        margin: 0 15px;
+    }
+
+    .user__avatar {
+        font-size: 1.5rem;
+    }
+}
